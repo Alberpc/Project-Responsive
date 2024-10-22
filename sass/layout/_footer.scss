@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+
+    @include breakpoint(tablet) {
+        justify-content: space-between;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 40px;
+
+    }
+    @include breakpoint(desktopxl) {
+        padding-bottom: 40px;
+        padding-top: 47px;
+    }
+
+    
+    
+    
+
+    &__name {
+        margin-bottom: 20px;
+        font-size: $heading-m;
+        font-weight: 700;
+        @include breakpoint(tablet) {
+            font-size: 32px;
+        }
+    }    
+    
+    
+    &__links {
+        @include reset-list();
+        display: flex;
+        gap: 25px;
+
+        @include breakpoint(tablet) {
+            gap: 32px;
+        }    
+
+        img {
+            width: 19.2px;
+            @include breakpoint(tablet) {
+                width: 24px;
+            }  
+
+
+        }
+    }    
+    
+}
+   

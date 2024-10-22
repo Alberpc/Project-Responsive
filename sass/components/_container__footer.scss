@@ -1,0 +1,42 @@
+.container__footer {
+    background-color: $grey;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    
+   @include breakpoint(tablet) {
+    margin-top: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
+   }
+   @include breakpoint(desktop) {
+    margin-top: 90px;
+    padding-left: 165px;
+    padding-right: 165px;
+
+   }
+
+   .ovales__container3 {
+    left: -189px;
+    top: 560px;
+    
+    z-index: 1;
+    position: absolute;
+    @include breakpoint(tablet) {
+        top: 620px;
+        left:-48px;;
+    }
+    @include breakpoint(desktopxl) {
+        top: 331px;
+        left: 0;
+      
+    }  
+    
+}
+    
+    
+}

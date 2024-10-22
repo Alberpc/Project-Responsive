@@ -1,0 +1,7 @@
+.button {
+    @include text-deco()
+   
+}
+.button:hover {
+    color: $green;
+}

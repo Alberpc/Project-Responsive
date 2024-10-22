@@ -1,0 +1,123 @@
+.contact {
+    position: relative;
+   
+    padding-bottom: 87px;
+    @include breakpoint (tablet) {
+        padding-bottom: 92px;
+        padding-left: 130px;
+        padding-right: 130px;
+
+    }
+    @include breakpoint(desktopxl) {
+        padding: 0;
+        padding-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 220px;
+        align-content: center;
+        margin-bottom: 92px;
+        
+    
+    }
+
+    &__header {
+        
+
+        h2 {
+            font-size: $heading-l;
+            text-align: center;
+            padding-top: 60px;
+            margin-bottom: 20px;
+            @include breakpoint(tablet) {
+                font-size: $heading-xl;
+            }
+            @include breakpoint(desktopxl) {
+                font-size: 88px;
+                text-align: start;
+                padding: 0;
+                margin-bottom: 36px;
+                
+            }
+
+           
+    
+        }
+        p {
+            
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 50px;
+            @include breakpoint(tablet) {
+               font-size: $text;
+            }
+            @include breakpoint(desktop) {
+                text-align: start
+            }
+    
+        }
+
+    }
+
+    
+
+
+    
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+       
+        label {
+            margin-bottom: 16px;
+            padding-left: 24px;
+           
+            
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            border: none;          
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            background-color: transparent;
+            outline: none;
+            margin-bottom: 32px;
+            padding-bottom: 10px;
+            color: white;
+            resize: none;
+            font-size: 16px;
+            padding-left: 10px;
+            
+          
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+          font-size: 16px;  /* Tamaño de fuente del placeholder */
+          font-weight: 500;
+          font-family:"Space Grotesk", sans-serif;
+        }
+
+
+
+     
+       
+
+        input.valid, textarea.valid {
+            border-bottom-color: $green;
+        }
+          
+        input.invalid, textarea.invalid {
+            border-bottom-color: red;
+        }
+
+        button.button {
+            background-color: transparent;
+            display: inline-block;
+            outline: none;
+            border: none;
+            text-align: end;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.linear-deco {
+    position: relative;
+    max-width: 100%;
+   
+    //Container1
+    .ovales__container1 {
+        left: -250px;
+        z-index: -2;
+        position: absolute;
+        top: 124px;
+        @include breakpoint(tablet) {
+            top: 110px;
+            left:-200px;
+        }
+        @include breakpoint(desktopxl) {
+            top: 170px;
+            left: -160px;
+        }    
+     
+    }
+    //Container2
+
+    .ovales__container2 {
+        z-index: -1;
+        position: absolute; 
+        left: 189px;
+        top: 1260px;
+
+        @include breakpoint(tablet) {
+            top: 1180px;
+            left:550px;  
+        }
+        @include breakpoint(desktop) {
+            top: 1000px;
+            left: 980px; 
+        }      
+        @include breakpoint(desktopxl) {
+            top: 1177px;
+            left: 1000px; 
+        }             
+        
+    }
+       
+    //Container3
+
+    .circle-contain {
+        
+        position: absolute;
+        top: 290px;
+        left: 311px;
+
+        @include breakpoint(tablet) {
+            top: 471px;
+            left: 680px;
+        }
+        @include breakpoint (desktop) {
+            left: 780px;
+        }
+        @include breakpoint(desktopxl) {
+            top: 560px;
+            left: 605px;
+           
+        }
+       
+    }
+}
